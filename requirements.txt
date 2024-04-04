@@ -1,2 +1,3 @@
 eng-syl
-eng-to-ipa
+pysle
+PyHyphen
