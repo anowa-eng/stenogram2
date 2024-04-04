@@ -1,7 +1,6 @@
 from abc import abstractmethod
 from typing import Dict
 from cv2.typing import Point, MatLike
-from eng_syl import Syllabel
 from pysle import isletool
 from hyphen import Hyphenator
 
