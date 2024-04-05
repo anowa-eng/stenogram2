@@ -1,3 +1,4 @@
 eng-syl
 pysle
 pyphen
+opencv-python-headless
