@@ -38,7 +38,9 @@ setup(
 	# List of keywords 
 	keywords=[],
 	# List of packages to install with this one 
-	install_requires=[],
+	install_requires=[
+        "opencv-python-headless"
+	],
 	# https://pypi.org/classifiers/ 
 	classifiers=[]
 )
