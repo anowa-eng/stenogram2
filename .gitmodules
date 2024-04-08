@@ -1,6 +1,3 @@
 [submodule "syllabifier"]
 	path = syllabifier
 	url = git@github.com:anson-vandoren/syllabifier.git
-[submodule "syllabalizer"]
-	path = syllabalizer
-	url = git@github.com:libindic/syllabalizer.git
