@@ -1,12 +1,11 @@
+import repackage
+repackage.up()
+
 import abc
-from typing import Dict, Generator, List, Tuple, Optional
+from typing import Dict, List
 from cv2.typing import Point, MatLike
-from pysle import isletool
-from pyphen import Pyphen
-import helpers
-
-_isle = isletool.Isle()
-
+from syllabifier import syllabifier
+from nltk.tokenize.sonority_sequencing import SyllableTokenizer
 
 class PolylinesGlyphPath:
 
@@ -24,24 +23,14 @@ class PolylinesGlyph:
 
 
 class Word:
-
-	def __init__(self, word: str, language: Optional[str] = None):
-		self.__pyphen = Pyphen(lang=language)
+	__SSP = SyllableTokenizer()
+	def __init__(self, word: str):
 		self.word = word
-		self.__syllables = self.__pyphen.inserted(word, '/').split('/')
-		print(self.__syllables)
-		self.pronunciations = [i.toList()[0] for i in _isle.lookup(word)]
+		self.arpabet_syllables = syllabifier.generate(word)
+		self.syllables = self.__SSP.tokenize(word)
 
-	def syllables(self, pronunciation: int = 0):
-		ipa = self.pronunciations[pronunciation]
-		syllables = zip(self.__syllables, ipa)
-		for syllable in syllables:
-			yield syllable
-
-
-for s in Word("project", "en-US").syllables(2):
-	print(s)
-
+# sorry
+print(Word('use').arpabet_syllables)
 
 class Shorthand(abc.ABC):
 
