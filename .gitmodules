@@ -1,3 +1,0 @@
-[submodule "syllabifier"]
-	path = syllabifier
-	url = git@github.com:anson-vandoren/syllabifier.git
