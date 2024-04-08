@@ -26,7 +26,9 @@ class Word:
 	__SSP = SyllableTokenizer()
 	def __init__(self, word: str):
 		self.word = word
+		# TODO: Add error handling for when self.arpabet_syllables is None
 		self.arpabet_syllables = syllabifier.generate(word)
+		# TODO: Add Onceler() from eng-syl to split the words.
 		self.syllables = self.__SSP.tokenize(word)
 
 # sorry
