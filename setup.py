@@ -37,12 +37,12 @@ setup(
 	download_url='',
 	# List of keywords 
 	keywords=[],
-	# List of packages to install with this one 
 	install_requires=[
+		# List of packages to install with this one 
         "opencv-python-headless",
         "repackage",
         "nltk",
-        "eng-syl @ https://github.com/ellipse-liu/eng-syl.git"
+        "eng-syl @ git+ssh://git@github.com/anowa-eng/eng-syl.git"
 	],
 	# https://pypi.org/classifiers/ 
 	classifiers=[]
