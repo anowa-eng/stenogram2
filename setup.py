@@ -41,7 +41,7 @@ setup(
 		# List of packages to install with this one 
         "opencv-python-headless",
         "repackage",
-        "nltk",
+        "syllabipy",
         "eng-syl @ git+ssh://git@github.com/anowa-eng/eng-syl.git"
 	],
 	# https://pypi.org/classifiers/ 
