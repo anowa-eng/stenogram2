@@ -41,8 +41,7 @@ setup(
 		# List of packages to install with this one 
         "opencv-python-headless",
         "repackage",
-        "syllabipy",
-        "eng-syl @ git+ssh://git@github.com/anowa-eng/eng-syl.git"
+        "syllabifier @ git+ssh://git@github.com/dippedrusk/arpabet-syllabifier.git"
 	],
 	# https://pypi.org/classifiers/ 
 	classifiers=[]
