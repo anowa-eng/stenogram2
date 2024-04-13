@@ -1,6 +1,6 @@
-[submodule "syllabifier"]
-	path = syllabifier
-	url = git@github.com:anowa-eng/syllabifier.git
 [submodule "phonecodes"]
 	path = phonecodes
 	url = https://github.com/jhasegaw/phonecodes.git
+[submodule "arpabet-syllabifier"]
+	path = arpabet-syllabifier
+	url = https://github.com/dippedrusk/arpabet-syllabifier.git
