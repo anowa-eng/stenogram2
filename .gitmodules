@@ -1,3 +1,6 @@
 [submodule "syllabifier"]
 	path = syllabifier
 	url = git@github.com:anowa-eng/syllabifier.git
+[submodule "ipa2arpabet"]
+	path = ipa2arpabet
+	url = https://github.com/joeseiden/ipa2arpabet.git
